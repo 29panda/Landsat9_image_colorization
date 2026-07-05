@@ -1,4 +1,3 @@
-# Landsat9_image_colorization
 # Thermal Infrared (TIR) Image Colorization using Pix2Pix GAN
 ### ISRO BAH 2026 Hackathon Project
 
@@ -48,6 +47,7 @@ where the generated RGB image resembles the corresponding multispectral RGB sate
 # Dataset
 
 The dataset was provided as part of the **ISRO BAH 2026 Hackathon**.
+It is a sample of images of 4 bands from LandSat 9.
 
 Each training sample contains:
 
@@ -169,27 +169,6 @@ Training was performed using:
 
 ---
 
-# Repository Structure
-
-```
-.
-├── dataset/
-├── models/
-│   ├── generator.py
-│   ├── discriminator.py
-│
-├── training/
-│   ├── train.py
-│   ├── dataset.py
-│
-├── checkpoints/
-├── results/
-├── utils/
-├── README.md
-```
-
----
-
 # Results
 
 The repository saves:
@@ -200,16 +179,6 @@ The repository saves:
 
 for every saved epoch to visualize training progress.
 
-Example:
-
-```
-Epoch_001/
-    input.png
-    target.png
-    generated.png
-```
-
----
 
 # Technologies Used
 
@@ -274,7 +243,6 @@ Future improvements include:
 - ESRGAN-based Super Resolution
 - Semantic-aware colorization
 - Perceptual Loss (VGG)
-- LPIPS evaluation
 - Attention U-Net Generator
 - Better PatchGAN architecture
 - Deployment as an inference pipeline
